@@ -17,7 +17,7 @@ export async function onRequest({request, next, env}) {
   }
   
   // Valid credentials - proceed to next handler
-  return await next();
+  return next();
 }
 
 function promptForAuth() {
